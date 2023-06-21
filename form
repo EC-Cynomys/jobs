@@ -1,0 +1,13 @@
+function decodeText(encodedText) {
+  let decodedText = '';
+  for (let i = 0; i < encodedText.length; i++) {
+    decodedText += String.fromCharCode(encodedText[i]);
+  }
+  return decodedText;
+}
+
+const encodedWord = [114, 97, 98, 98, 105, 116];
+
+const decodedWord = decodeText(encodedWord);
+
+console.log(decodedWord);
